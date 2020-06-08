@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <style>
+        #container { 
+            height: 800px;
+            width: 1000px;
+            background-color:darkslategrey;
+            border-style:solid;
+            border-color:black;
+            border-width:5px;
+            border-radius:1rem;
+            display:flex;
+            align-content: center;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #projects {
+            flex-grow: 1;
+            height: 80%;
+            background-color:grey;
+            border-color:black;
+            border-style:solid;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-radius:2rem;
+        }
+
+        #todoContainer {
+            display: flex;
+            flex-grow: 3;
+            background-color:darkgrey;
+            border-style:solid;
+            border-color:black;
+            border-radius:1rem;
+            margin-right: 20px;
+            height:80%;
+        }
+
+        button {
+            height:20%;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        #projectList {
+            display:flex;
+            flex-direction: column;
+            border-style:solid;
+            border-color:black;
+            margin-left:20px;
+            margin-right:20px;
+            margin-top:20px;
+            margin-bottom:20px;
+
+        }
+
+        .projectGroup { 
+            border-style:solid;
+            border-color:black;
+            margin-left:20px;
+            margin-right:20px;
+            margin-top:20px;
+            margin-bottom:20px;
+            height:20%;
+
+        }
+
+        #todoList {
+            border-style:solid;
+            border-color:black;
+            margin-left:20px;
+            margin-right:20px;
+            margin-top:20px;
+            margin-bottom:20px;
+            height:10%;
+            width:80%;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+</head>
+<body>
+    <div id='container'>
+        <div id='projects'>
+            <h1>Projects:</h1>
+            <div id='projectList'></div>
+            <div class='projectGroup' id='defaultProject'></div>
+        </div>
+        <div id='todoContainer'>
+        <button id='addtodo;'>Add item</button>
+        <div id='todoList'></div>
+        </div>
+    </div>
+
+
+    <script src='bundle.js'></script>
+</body>
+</html>
